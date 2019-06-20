@@ -22,6 +22,7 @@ namespace HangoutApp.API.Controllers
             _context = context;
 
         }
+        [AllowAnonymous]
         // GET api/values
         [HttpGet]
         public async Task<IActionResult> GetValues()
@@ -55,10 +56,6 @@ namespace HangoutApp.API.Controllers
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public void Delete(int id)
-        {
-        }
-          [HttpDelete("{id}")]
-        public void TestGitPush(int id)
         {
         }
     }
