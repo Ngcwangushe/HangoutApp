@@ -57,5 +57,9 @@ namespace HangoutApp.API.Controllers
         public void Delete(int id)
         {
         }
+          [HttpDelete("{id}")]
+        public void TestGitPush(int id)
+        {
+        }
     }
 }
